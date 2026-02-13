@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thank you | Open Cast Mine</title>
+    <meta name="theme-color" content="#d86a28" />
+    <link rel="icon" type="image/png" href="/bucket.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind = {
+        config: {
+          theme: {
+            extend: {
+              colors: {
+                primary: "#d86a28",
+                secondary: "#efe7dc",
+                background: "#f7f4ef",
+                foreground: "#1a1c1e",
+                muted: "#f2ede6",
+                border: "#e2ddd4"
+              },
+              fontFamily: {
+                sans: ["Lato", "system-ui", "sans-serif"],
+                display: ["Lato", "system-ui", "sans-serif"]
+              }
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-background font-sans">
+    <header class="fixed top-0 left-0 right-0 z-30 bg-background/90 backdrop-blur border-b border-border">
+      <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2 font-display font-semibold tracking-tight">
+          <a href="/" class="flex items-center gap-2">
+            <img src="/bucket.png" alt="Open Cast Mine" class="h-8 w-auto" />
+            Open Cast Mine
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="min-h-screen flex flex-col items-center justify-center px-4 pt-24 pb-16">
+      <div class="text-center max-w-lg mx-auto">
+        <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 text-primary mb-8" aria-hidden="true">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">You're on the list.</h1>
+        <p class="text-xl text-foreground/70 mb-12">Thanks for signing up. We'll be in touch soon about the pilot program.</p>
+        <a
+          href="/"
+          class="inline-flex items-center justify-center px-12 py-5 text-lg font-semibold text-white bg-primary rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-lg shadow-primary/25 hover:shadow-primary/30"
+        >
+          Return to home
+        </a>
+      </div>
+    </main>
+
+    <footer class="py-12 border-t border-border bg-muted/10">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm text-foreground/60">
+        <div class="flex items-center gap-2 mb-4 md:mb-0">
+          <img src="/bucket.png" alt="Open Cast Mine" class="h-8 w-auto" />
+          <span class="font-bold text-foreground">Open Cast Mine</span>
+        </div>
+        <div class="flex gap-8">
+          <a href="/" class="hover:text-foreground">Privacy</a>
+          <a href="/" class="hover:text-foreground">Terms</a>
+          <a href="/#contact" class="hover:text-foreground">Contact</a>
+        </div>
+        <div class="mt-4 md:mt-0">© 2024 Open Cast Mine Inc.</div>
+      </div>
+    </footer>
+  </body>
+</html>
