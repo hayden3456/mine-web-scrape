@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Open Cast Mine</title>
+    <meta
+      name="description"
+      content="Open Cast Mine alerts aggregate and materials suppliers when new construction permits are filed so sales teams can reach out first."
+    />
+    <meta name="theme-color" content="#d86a28" />
+    <!-- Favicon (logo) -->
+    <link rel="icon" type="image/png" href="bucket.png" />
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Open Cast Mine" />
+    <meta property="og:description" content="Open Cast Mine alerts aggregate and materials suppliers when new construction permits are filed so sales teams can reach out first." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Open Cast Mine | Permit Alerts for Aggregate Sales" />
+    <meta name="twitter:description" content="Open Cast Mine alerts aggregate and materials suppliers when new construction permits are filed so sales teams can reach out first." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind = {
+        config: {
+          theme: {
+            extend: {
+              colors: {
+                primary: "#d86a28",
+                secondary: "#efe7dc",
+                background: "#f7f4ef",
+                foreground: "#1a1c1e",
+                muted: "#f2ede6",
+                border: "#e2ddd4"
+              },
+              fontFamily: {
+                sans: ["Lato", "system-ui", "sans-serif"],
+                display: ["Lato", "system-ui", "sans-serif"],
+                mono: ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"]
+              }
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .bg-grid-pattern {
+        background-image: linear-gradient(
+            90deg,
+            rgba(148, 145, 134, 0.2) 1px,
+            transparent 1px
+          ),
+          linear-gradient(rgba(148, 145, 134, 0.2) 1px, transparent 1px);
+        background-size: 120px 120px;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-background font-sans selection:bg-primary/20 selection:text-foreground">
+    <header class="fixed top-0 left-0 right-0 z-30 bg-background/90 backdrop-blur border-b border-border">
+      <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2 font-display font-semibold tracking-tight">
+          <img src="bucket.png" alt="Open Cast Mine" class="h-8 w-auto" />
+          Open Cast Mine
+        </div>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-foreground/70">
+          <a href="#problem" class="hover:text-foreground">Problem</a>
+          <a href="#how-it-works" class="hover:text-foreground">How it works</a>
+          <a href="#benefits" class="hover:text-foreground">Benefits</a>
+          <a href="#pricing" class="hover:text-foreground">Pricing</a>
+          <a
+            href="#contact"
+            class="inline-flex items-center justify-center px-4 py-2 rounded-lg border border-border bg-white hover:bg-muted/60 text-foreground"
+          >
+            Book a Demo
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-grid-pattern opacity-40"></div>
+
+        <!-- Abstract background blobs -->
+        <div class="absolute top-0 right-0 -translate-y-12 translate-x-12 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-[500px] h-[500px] bg-secondary rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="flex-1 max-w-2xl">
+              <span class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 text-sm font-medium border border-primary/20 bg-primary/5 text-primary rounded-full">
+                Now in Early Access
+              </span>
+              <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.1] tracking-tight mb-6">
+                Know about construction projects <span class="text-primary">before</span> your competitors do.
+              </h1>
+              <p class="text-xl text-foreground/70 leading-relaxed mb-8 max-w-lg">
+                We monitor municipal permits in real-time to identify high-value aggregate needs before ground is even broken.
+              </p>
+
+              <div class="flex flex-col sm:flex-row gap-4">
+
+                <a
+                  href="#how-it-works"
+                  class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-foreground bg-background border border-border rounded-lg hover:bg-muted/50 transition-all duration-200"
+                >
+                  Join The Pilot Program
+                </a>
+              </div>
+            </div>
+
+            <div class="flex-1 w-full max-w-lg lg:max-w-none relative">
+              <div class="relative aspect-square md:aspect-[4/3] bg-muted/30 rounded-2xl border border-border overflow-hidden shadow-2xl">
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-40 grayscale contrast-125"></div>
+
+                <div class="absolute top-[15%] left-[10%] bg-white p-3 rounded-lg shadow-lg border border-border z-10">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 shrink-0">
+                      <span class="text-sm font-bold">⛏</span>
+                    </div>
+                    <div>
+                      <div class="text-[10px] font-semibold text-foreground/60 uppercase tracking-wider">New Permit • 2m ago</div>
+                      <div class="font-bold text-sm">Downtown Office Complex</div>
+                      <div class="text-xs font-mono text-primary mt-0.5">25,000 tons gravel est.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="absolute bottom-[20%] right-[10%] bg-white p-3 rounded-lg shadow-lg border border-border z-10">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 shrink-0">
+                      <span class="text-sm font-bold">🏗</span>
+                    </div>
+                    <div>
+                      <div class="text-[10px] font-semibold text-foreground/60 uppercase tracking-wider">New Permit • 15m ago</div>
+                      <div class="font-bold text-sm">Retail Park Phase 2</div>
+                      <div class="text-xs font-mono text-primary mt-0.5">12,000 tons fill est.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem Section -->
+      <section id="problem" class="py-24 bg-muted/30 border-y border-border/50">
+        <div class="container mx-auto px-4">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-6xl font-display font-bold">You're reacting too late.</h2>
+            <p class="text-lg text-foreground/70">
+              By the time you see the "Coming Soon" sign, the materials contract was signed months ago.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+            <div class="bg-white p-10 py-12 rounded-2xl border-2 border-red-200 shadow-md relative overflow-hidden text-center">
+              <div class="absolute top-0 right-0 p-4 text-red-500 opacity-10 text-6xl">!</div>
+              <h3 class="text-2xl font-bold mb-6 text-red-600">The Old Way</h3>
+              <ul class="space-y-5 text-lg text-foreground/70 text-left max-w-md mx-auto">
+                <li class="flex items-start gap-3"><span class="text-red-400 mt-1 shrink-0">—</span>Hoping GCs call you</li>
+                <li class="flex items-start gap-3"><span class="text-red-400 mt-1 shrink-0">—</span>Bidding when competitors are already entrenched</li>
+                <li class="flex items-start gap-3"><span class="text-red-400 mt-1 shrink-0">—</span>Relying on word-of-mouth and existing relationships</li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-10 py-12 rounded-2xl border-2 border-primary/40 shadow-md shadow-primary/10 relative overflow-hidden text-center">
+              <div class="absolute top-0 right-0 p-4 text-primary opacity-10 text-6xl">—</div>
+              <h3 class="text-2xl font-bold mb-6 text-primary">The Open Cast Way</h3>
+              <ul class="space-y-5 text-lg text-foreground/80 text-left max-w-md mx-auto">
+                <li class="flex items-start gap-3"><span class="text-primary mt-1 shrink-0">—</span>Instant alerts when permits are filed</li>
+                <li class="flex items-start gap-3"><span class="text-primary mt-1 shrink-0">—</span>Be the first vendor to contact the GC</li>
+                <li class="flex items-start gap-3"><span class="text-primary mt-1 shrink-0">—</span>Automated outreach to decision makers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solution -->
+      <section id="solution" class="py-24">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1 flex flex-col gap-14">
+              <h2 class="text-4xl md:text-6xl font-display font-bold">Get sales leads automatically.</h2>
+              <p class="text-xl md:text-2xl text-foreground/70">
+                We aggregate data from thousands of municipal databases, filter out the noise, and deliver high-volume commercial and industrial projects directly to your CRM.
+              </p>
+
+              <div class="grid grid-cols-2 gap-10">
+                <div class="border-l-2 border-primary pl-4 py-2 flex flex-col justify-center gap-2">
+                  <div class="text-4xl font-bold font-mono text-foreground">24h</div>
+                  <div class="text-base text-foreground/60">Lead time advantage</div>
+                </div>
+                <div class="border-l-2 border-primary pl-4 py-2 flex flex-col justify-center gap-2">
+                  <div class="text-4xl font-bold font-mono text-foreground">100%</div>
+                  <div class="text-base text-foreground/60">Automated sourcing</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-1 w-full relative">
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-border">
+                <img
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200"
+                  alt="High rise construction site"
+                  class="w-full h-auto opacity-90 grayscale hover:grayscale-0 transition-all duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
+                  <div class="text-[#f5f1eb]">
+                    <div class="font-mono text-xs text-primary mb-2">DETECTED: SITE PREP PHASE</div>
+                    <div class="font-bold text-xl">Highland Commercial Park</div>
+                    <div class="text-sm opacity-80">Permit #8829-B • 50,000 sq ft foundation</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section id="how-it-works" class="py-24 bg-white text-black relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(#d86a28_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.08]"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+          <div class="text-center max-w-3xl mx-auto mb-20">
+            <h2 class="text-3xl md:text-5xl font-display font-bold mb-4 text-primary">How it works</h2>
+            <p class="text-primary/90 text-xl md:text-2xl font-medium">Three steps to dominating your local market.</p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-10 md:gap-14 max-w-5xl mx-auto">
+            <div class="text-center flex flex-col items-center">
+              <div class="w-20 h-20 rounded-2xl bg-[#8a3c12] flex items-center justify-center text-[#f5f1eb] font-bold text-3xl mb-6 shadow-lg" aria-hidden="true">
+                1
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold mb-4 text-primary">Track Permits</h3>
+              <p class="text-black/85 text-lg leading-relaxed">We monitor city and county planning portals and map every new filing in your territory.</p>
+            </div>
+            <div class="text-center flex flex-col items-center">
+              <div class="w-20 h-20 rounded-2xl bg-[#b8551f] flex items-center justify-center text-[#f5f1eb] font-bold text-3xl mb-6 shadow-lg" aria-hidden="true">
+                2
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold mb-4 text-primary">Flag What Matters</h3>
+              <p class="text-black/85 text-lg leading-relaxed">We filter noise and identify projects that need gravel, concrete, or asphalt.</p>
+            </div>
+            <div class="text-center flex flex-col items-center">
+              <div class="w-20 h-20 rounded-2xl bg-[#e07d38] flex items-center justify-center text-[#f5f1eb] font-bold text-3xl mb-6 shadow-lg" aria-hidden="true">
+                3
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold mb-4 text-primary">Reach Out First</h3>
+              <p class="text-black/85 text-lg leading-relaxed">Get daily lead digests with GC contact info. Be the first quote on their desk.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits -->
+      <section id="benefits" class="py-24 bg-muted/30">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-display font-bold">Built for aggregate sales teams.</h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl border-2 border-border shadow-sm hover:border-primary/50 transition-colors text-center">
+              <h3 class="font-bold text-lg mb-2">Real-time Alerts</h3>
+              <p class="text-foreground/70 text-sm leading-relaxed">Get notified the moment a permit is approved.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-2 border-border shadow-sm hover:border-primary/50 transition-colors text-center">
+              <h3 class="font-bold text-lg mb-2">Territory Mapping</h3>
+              <p class="text-foreground/70 text-sm leading-relaxed">Draw your service area on a map. We only watch that zone.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-2 border-border shadow-sm hover:border-primary/50 transition-colors text-center">
+              <h3 class="font-bold text-lg mb-2">Volume Estimator</h3>
+              <p class="text-foreground/70 text-sm leading-relaxed">Estimate tonnage needs based on square footage.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-2 border-border shadow-sm hover:border-primary/50 transition-colors text-center">
+              <h3 class="font-bold text-lg mb-2">GC Database</h3>
+              <p class="text-foreground/70 text-sm leading-relaxed">Connects permits to known General Contractors.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-2 border-border shadow-sm hover:border-primary/50 transition-colors text-center">
+              <h3 class="font-bold text-lg mb-2">CRM Integration</h3>
+              <p class="text-foreground/70 text-sm leading-relaxed">Push leads directly to Salesforce, HubSpot, or Pipedrive.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border-2 border-border shadow-sm hover:border-primary/50 transition-colors text-center">
+              <h3 class="font-bold text-lg mb-2">Exclusive Leads</h3>
+              <p class="text-foreground/70 text-sm leading-relaxed">Limit the number of vendors per territory.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="py-24 border-y border-border/50">
+        <div class="container mx-auto px-4">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-5xl font-display font-bold mb-4">Simple pricing</h2>
+            <p class="text-lg text-foreground/70">Choose the plan that fits your team.</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-20">
+            <!-- Monthly plan -->
+            <div class="bg-white rounded-2xl border-2 border-primary/40 shadow-lg shadow-primary/10 p-8 flex flex-col">
+              <h3 class="text-xl font-bold text-primary mb-2">Monthly</h3>
+              <div class="mb-6">
+                <span class="text-4xl font-display font-bold text-foreground">$75</span>
+                <span class="text-foreground/60">/month</span>
+              </div>
+              <ul class="space-y-3 text-foreground/80 mb-8 flex-1">
+                <li class="flex items-center gap-2"><span class="text-primary">✓</span> Real-time permit alerts in your territory</li>
+                <li class="flex items-center gap-2"><span class="text-primary">✓</span> Daily lead digests with GC contact info</li>
+                <li class="flex items-center gap-2"><span class="text-primary">✓</span> Email outreach with the click of a button</li>
+                <li class="flex items-center gap-2"><span class="text-primary">✓</span> Cancel anytime</li>
+              </ul>
+              <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary text-foreground font-semibold hover:bg-primary/90 transition text-center">
+                Get started
+              </a>
+            </div>
+
+            <!-- Per signed client -->
+            <div class="bg-white rounded-2xl border-2 border-border shadow-sm p-8 flex flex-col">
+              <h3 class="text-xl font-bold text-foreground mb-2">Per signed client</h3>
+              <p class="text-foreground/70 mb-6 flex-1">Pay based on signed clients. Ideal for teams who prefer usage-based pricing.</p>
+              <p class="text-sm font-semibold text-primary mb-8">Pricing available by request.</p>
+              <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-border text-foreground font-semibold hover:bg-muted/50 transition text-center">
+                Request pricing
+              </a>
+            </div>
+          </div>
+
+         
+      <!-- CTA Section -->
+      <section id="contact" class="py-24 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+          <div class="max-w-4xl mx-auto text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">Be the first call on every new project.</h2>
+            <p class="text-xl text-foreground/70">Territories are limited. Join the waitlist to secure your region.</p>
+          </div>
+
+          <div class="max-w-md mx-auto relative z-20 bg-white rounded-2xl border border-border p-6 shadow-xl">
+            <form action="https://formsubmit.co/hayden@opencastmine.com" method="POST" class="space-y-4">
+              <!-- FormSubmit: submissions go to hayden@opencastmine.com; Reply-To uses the form's email field -->
+              <input type="hidden" name="_subject" value="Open Cast Mine – Waitlist signup">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <div>
+                <label class="block text-sm font-medium mb-1" for="name">Full name</label>
+                <input class="w-full rounded-lg border border-border px-3 py-2" id="name" name="name" type="text" placeholder="Jane Smith" required />
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1" for="email">Work email</label>
+                <input class="w-full rounded-lg border border-border px-3 py-2" id="email" name="email" type="email" placeholder="jane@company.com" required />
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1" for="company">Company</label>
+                <input class="w-full rounded-lg border border-border px-3 py-2" id="company" name="company" type="text" placeholder="Aggregate Supply Co." />
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1" for="region">Service region</label>
+                <input class="w-full rounded-lg border border-border px-3 py-2" id="region" name="region" type="text" placeholder="Central Texas" />
+              </div>
+              <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary text-black font-semibold hover:bg-primary/90 transition">
+                Join the Waitlist
+              </button>
+              <p class="text-xs text-foreground/60 text-center">No spam. Built for operators. Early access limited.</p>
+            </form>
+          </div>
+        </div>
+
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[1000px] h-[1000px] bg-primary/5 rounded-full blur-3xl -z-10"></div>
+      </section>
+    </main>
+
+    <footer class="py-12 border-t border-border bg-muted/10">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm text-foreground/60">
+        <div class="flex items-center gap-2 mb-4 md:mb-0">
+          <img src="bucket.png" alt="Open Cast Mine" class="h-8 w-auto" />
+          <span class="font-bold text-foreground">Open Cast Mine</span>
+        </div>
+        <div class="flex gap-8">
+          <a href="#" class="hover:text-foreground">Privacy</a>
+          <a href="#" class="hover:text-foreground">Terms</a>
+          <a href="#" class="hover:text-foreground">Contact</a>
+        </div>
+        <div class="mt-4 md:mt-0">© 2024 Open Cast Mine Inc.</div>
+      </div>
+    </footer>
+  </body>
+</html>
